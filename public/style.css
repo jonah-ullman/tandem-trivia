@@ -4,6 +4,8 @@
   --navy: #00122a;
   --light-navy: #082c49;
   --burnt-orange: #ad8034;
+  --green: #2c4023;
+  --red: #993625;
 }
 
 html,
@@ -94,4 +96,23 @@ h1 {
   height: 25rem;
   margin-right: -6rem;
   margin-bottom: 3rem;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer {
+  width: 20rem;
+  height: 4rem;
+  margin: 0.5rem 0;
+}
+
+.submitted.correct {
+  background-color: var(--green);
+}
+
+.submitted.incorrect {
+  background-color: var(--red);
 }
