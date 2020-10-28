@@ -1,0 +1,97 @@
+:root {
+  --tan: #fff4e6;
+  --olive: #747447;
+  --navy: #00122a;
+  --light-navy: #082c49;
+  --burnt-orange: #ad8034;
+}
+
+html,
+body,
+#app,
+#home {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+#home {
+  background-color: var(--tan);
+  color: var(--olive);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header {
+  padding: 4rem auto;
+  width: 100%;
+  margin-left: 25rem;
+}
+
+#title {
+  font-size: 5rem;
+  margin-top: 5rem;
+}
+
+#home-content {
+  width: 100%;
+  margin-left: 25rem;
+}
+
+#intro-text {
+  width: 50rem;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  cursor: pointer;
+  background-color: var(--navy);
+  color: white;
+}
+
+.button:hover {
+  background-color: var(--light-navy);
+  transition: 0.5s;
+}
+
+#start-button-container {
+  margin-top: 5rem;
+}
+
+#start-button {
+  font-size: 1.5rem;
+}
+
+#footer {
+  width: 100%;
+}
+
+#circle-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+}
+
+#circle {
+  background-color: var(--burnt-orange);
+  border-radius: 100%;
+  width: 25rem;
+  height: 25rem;
+  margin-right: -6rem;
+  margin-bottom: 3rem;
+}
