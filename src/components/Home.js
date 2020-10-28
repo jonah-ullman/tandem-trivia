@@ -4,6 +4,7 @@ import Game from './Game';
 
 const DISPLAY_HOME = 'home';
 const DISPLAY_GAME = 'game';
+const DISPLAY_RESULTS = 'results';
 
 function Home() {
   const [content, setContent] = useState(DISPLAY_HOME);
@@ -15,7 +16,10 @@ function Home() {
       {content === DISPLAY_HOME && (
         <Intro setContent={() => setContent(DISPLAY_GAME)} />
       )}
-      {content === DISPLAY_GAME && <Game />}
+      {content === DISPLAY_GAME && (
+        <Game setContent={() => setContent(DISPLAY_RESULTS)} />
+      )}
+      {content === DISPLAY_RESULTS && <div>RESULTS</div>}
       <div id="footer">
         <div id="circle-container">
           <div id="circle"></div>

@@ -1,4 +1,4 @@
-const questions = [
+const data = [
   {
     question: 'What was Tandem previous name?',
     incorrect: ['Tandem', 'Burger Shack', 'Extraordinary Humans'],
@@ -115,4 +115,4 @@ const questions = [
   },
 ];
 
-exports.questions = questions;
+exports.data = data;
