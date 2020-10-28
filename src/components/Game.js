@@ -30,7 +30,7 @@ function Game({ setContent, setResult }) {
           localStorage.setItem('totalScore', totalScore + score);
           setContent();
         }
-      }, 15);
+      }, 1500);
     }
   }, [submitted]);
 
