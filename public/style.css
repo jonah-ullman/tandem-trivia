@@ -29,14 +29,11 @@ h1 {
   color: var(--olive);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding-left: 20rem;
 }
 
 #header {
-  padding: 4rem auto;
   width: 100%;
-  margin-left: 25rem;
 }
 
 #title {
@@ -44,9 +41,31 @@ h1 {
   margin-top: 5rem;
 }
 
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 #home-content {
   width: 100%;
-  margin-left: 25rem;
+}
+
+#column-left {
+  margin-top: 5rem;
+  height: 30rem;
+  width: 50rem;
+}
+
+#game {
+  height: 30rem;
+  width: 50rem;
+}
+
+#column-right {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 #intro-text {
@@ -85,7 +104,7 @@ h1 {
 #circle-container {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: column-reverse;
   width: 100%;
 }
 
@@ -115,4 +134,9 @@ h1 {
 
 .submitted.incorrect {
   background-color: var(--red);
+}
+
+#results {
+  height: 30rem;
+  width: 50rem;
 }

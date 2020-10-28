@@ -15,8 +15,8 @@ function Home() {
       <div id="header">
         <h1 id="title">tandem trivia</h1>
       </div>
-      <div>
-        <div id="column-right">
+      <div id="content">
+        <div id="column-left">
           {content === DISPLAY_HOME && (
             <Intro setContent={() => setContent(DISPLAY_GAME)} />
           )}

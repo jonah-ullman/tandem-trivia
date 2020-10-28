@@ -26,6 +26,7 @@ function Question({ question, submitAnswer, submitted }) {
               value={isCorrect}
               key={answer}
               onClick={submitAnswer}
+              disabled={submitted}
             >
               {answer}
             </button>
