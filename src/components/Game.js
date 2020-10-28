@@ -15,29 +15,31 @@ function Game({ setContent, setResult }) {
     setLoadedQuestions(true);
   }, []);
 
+  useEffect(() => {
+    if (submitted === true) {
+      setTimeout(() => {
+        setSubmitted(false);
+        if (currentQuestionIndex < 9) {
+          setCurrentQuestionIndex(currentQuestionIndex + 1);
+        } else {
+          console.log('in timeout', score);
+          setResult(score);
+          let playCount = parseInt(localStorage.getItem('playCount')) || 0;
+          let totalScore = parseInt(localStorage.getItem('totalScore')) || 0;
+          localStorage.setItem('playCount', ++playCount);
+          localStorage.setItem('totalScore', totalScore + score);
+          setContent();
+        }
+      }, 15);
+    }
+  }, [submitted]);
+
   const submitAnswer = (event) => {
     const correct = event.currentTarget.value === 'correct';
     setSubmitted(true);
-    console.log('before set', score);
     if (correct) {
       setScore(score + 1);
     }
-    console.log('after set', score);
-    setTimeout(() => {
-      setSubmitted(false);
-      if (currentQuestionIndex < 9) {
-        setCurrentQuestionIndex(currentQuestionIndex + 1);
-      } else {
-        console.log('in timeout', score);
-        setResult(score);
-        let playCount = parseInt(localStorage.getItem('playCount')) || 0;
-        let totalScore = parseInt(localStorage.getItem('totalScore')) || 0;
-        localStorage.setItem('playCount', ++playCount);
-        localStorage.setItem('totalScore', totalScore + score);
-        setContent();
-      }
-    }, 15);
-    console.log('after timeout', score);
   };
 
   return (
