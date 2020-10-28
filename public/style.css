@@ -46,6 +46,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
 }
 
 #home-content {
@@ -63,9 +64,14 @@ h1 {
   width: 50rem;
 }
 
+.question-header {
+  height: 3rem;
+}
+
 #column-right {
   display: flex;
   flex-direction: column-reverse;
+  height: 100%;
 }
 
 #intro-text {

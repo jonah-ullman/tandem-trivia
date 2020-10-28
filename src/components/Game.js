@@ -5,7 +5,6 @@ import Question from './Question';
 
 function Game({ setContent, setResult }) {
   const [score, setScore] = useState(0);
-  // const [disabled, setDisabled] = useState(false)
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [loadedQuestions, setLoadedQuestions] = useState(false);
@@ -30,7 +29,7 @@ function Game({ setContent, setResult }) {
         setResult(score);
         setContent();
       }
-    }, 2000);
+    }, 1500);
   };
 
   return (

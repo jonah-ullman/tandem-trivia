@@ -12,7 +12,7 @@ function Question({ question, submitAnswer, submitted }) {
 
   return (
     <div className="question">
-      <h2>{question.question}</h2>
+      <h2 className="question-header">{question.question}</h2>
       <div className="answers">
         {answers.map((answer) => {
           const isCorrect =
