@@ -22,7 +22,6 @@ function Game({ setContent, setResult }) {
         if (currentQuestionIndex < 9) {
           setCurrentQuestionIndex(currentQuestionIndex + 1);
         } else {
-          console.log('in timeout', score);
           setResult(score);
           let playCount = parseInt(localStorage.getItem('playCount')) || 0;
           let totalScore = parseInt(localStorage.getItem('totalScore')) || 0;
