@@ -2,10 +2,10 @@
 
 ## Getting Started
 
-$ git clone https://github.com/jonah-ullman/tandem-trivia.git
-$ cd tandem-trivia
-$ npm install
-$ npm start
+$ git clone https://github.com/jonah-ullman/tandem-trivia.git. 
+$ cd tandem-trivia  
+$ npm install  
+$ npm start  
 
 Visit localhost:3000 to play!
 
